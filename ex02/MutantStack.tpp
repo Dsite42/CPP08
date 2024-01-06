@@ -6,7 +6,7 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/29 16:32:29 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/12/29 17:27:50 by cgodecke         ###   ########.fr       */
+/*   Updated: 2024/01/06 15:56:52 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,5 +79,3 @@ typename MutantStack<T>::const_reverse_iterator MutantStack<T>::rend() const
 {
 	return (std::stack<T>::c.rend());
 }
-
-

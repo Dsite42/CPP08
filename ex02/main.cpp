@@ -6,7 +6,7 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/29 15:45:52 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/12/29 17:07:31 by cgodecke         ###   ########.fr       */
+/*   Updated: 2024/01/06 17:29:26 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 int main()
 {
+	std::cout << "\033[33m" << "Subject test\n"<< "\033[0m";
+
 	MutantStack<int> mstack;
 
 	mstack.push(5);
@@ -43,5 +45,21 @@ int main()
 	}
 	std::cout << std::endl;
 	std::stack<int> s(mstack);
+
+
+
+	std::cout << "\033[33m" << "Test with rbegin and rend\n"<< "\033[0m";
+
+	MutantStack<int>::reverse_iterator rit = mstack.rbegin();
+	MutantStack<int>::reverse_iterator rite = mstack.rend();
+
+	std::cout << "stack: ";
+	while (rit != rite)
+	{
+		std::cout << *rit << " ";
+		++rit;
+	}
+	std::cout << std::endl;
+	
 	return 0;
 }

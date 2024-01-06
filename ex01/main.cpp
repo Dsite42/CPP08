@@ -6,15 +6,12 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 14:31:16 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/12/15 19:34:40 by cgodecke         ###   ########.fr       */
+/*   Updated: 2024/01/06 15:55:32 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Span.hpp"
 #include <cstdlib>
-
-
-
 
 
 int main()
@@ -43,6 +40,7 @@ int main()
 	{
 		std::cout << e.what() << std::endl;
 	}
+
 
 	std::cout << "\033[33m" << "Test vector range\n"<< "\033[0m";
 	Span sp2 = Span(100);
@@ -86,7 +84,4 @@ int main()
 	{
 		std::cout << e.what() << std::endl;
 	}
-
-
 }
-
